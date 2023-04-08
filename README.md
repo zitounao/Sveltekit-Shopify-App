@@ -10,7 +10,7 @@
 git clone https://github.com/zitounao/Sveltekit-Shopify-App.git
 ```
 
-2- create app in shopify partnaers
+2- create app in shopify partners
 
 » Go to https://www.shopify.com/partners and login
 
