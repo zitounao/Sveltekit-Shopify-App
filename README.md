@@ -1,5 +1,7 @@
 # Shopify Sveltekit App
 
+NOTE: App bridge is not used in this code but you're gonna have to add it to render outside of the usual app surface and communicate with the rest of the Shopify admin. More on it here: https://shopify.dev/docs/apps/tools/app-bridge
+
 ![Alt text](static/proof.png)
 
 ## How to install
