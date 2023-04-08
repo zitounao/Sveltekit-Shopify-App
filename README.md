@@ -34,8 +34,8 @@ git clone https://github.com/zitounao/Sveltekit-Shopify-App.git
 
 ```
 cp .env.example .env
-run npm install
-run npm dev -- --port 3000
+npm run install
+npm run dev -- --port 3000
 ```
 
 No need to browse http://localhost:3000 now.
