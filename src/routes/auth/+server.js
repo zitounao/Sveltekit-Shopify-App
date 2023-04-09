@@ -2,7 +2,7 @@ import shopify from "$lib/shopify";
 import dotenv from "dotenv";
 dotenv.config();
 
-export const GET = async (event) => {
+export const GET = async ({ request }) => {
 
     // Here i'm simply adjusting the response to be accepted by the shopify library
     // The shopify library needs to use the header functions to set the headers including the location and cookies...etc
@@ -21,7 +21,7 @@ export const GET = async (event) => {
         shop: shopify.utils.sanitizeShop(process.env.SHOP_NAME, true),
         callbackPath: '/auth/callback',
         isOnline: false,
-        rawRequest: event.request,
+        rawRequest: request,
         rawResponse: rawRes
     })
 
