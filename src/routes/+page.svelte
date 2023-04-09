@@ -1,12 +1,14 @@
 <script>
-  const installApp = () => {
-    window.location.href = "/auth";
+  import { goto } from "$app/navigation";
+
+  const EmbedApp = () => {
+    goto("/auth");
   };
 </script>
 
 <h1>SvelteKit and Shopify</h1>
 
-<button on:click={installApp}>Click to install</button>
+<button on:click={EmbedApp}>Embed App</button>
 
 <style>
   button {
