@@ -1,6 +1,8 @@
 # Shopify Sveltekit App
 
-NOTE: App bridge is not used in this code but you're gonna have to add it to render outside of the usual app surface and communicate with the rest of the Shopify admin. More on it here: https://shopify.dev/docs/apps/tools/app-bridge
+NOTE 1: App bridge is not used in this code but you're gonna have to add it to render outside of the usual app surface and communicate with the rest of the Shopify admin. More on it here: https://shopify.dev/docs/apps/tools/app-bridge
+
+NOTE2: You'll have to serve over https to work with App bridge, expect pain if you use ngrok (cookies problems)
 
 ![Alt text](static/proof.png)
 
@@ -37,6 +39,7 @@ git clone https://github.com/zitounao/Sveltekit-Shopify-App.git
 ```
 cp .env.example .env
 npm run install
+npx prisma push
 npm run dev -- --port 3000
 ```
 
