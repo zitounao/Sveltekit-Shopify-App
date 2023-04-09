@@ -39,7 +39,7 @@ git clone https://github.com/zitounao/Sveltekit-Shopify-App.git
 ```
 cp .env.example .env
 npm run install
-npx prisma push
+npx prisma db push
 npm run dev -- --port 3000
 ```
 
